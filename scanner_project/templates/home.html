@@ -1,0 +1,141 @@
+<!-- 
+<!------------------------------------------------------ Version 1.0 ----------------------------------------->
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sentiment Analyzer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> You can see Predicted Sentiment here 👇</h1>
+    <form action="#" method="post">
+        {% csrf_token %}
+        Word: <input type="text" name="word"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    Result: <input  type="text" value="{{a}}"
+
+</body>
+
+</html>
+ -->
+ -->
+<!------------------------------------------------------ Version 2.0 ----------------------------------------->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sentiment Analyzer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Sentiment Analyzer Project</h1>
+    <p>This project utilizes Natural Language Processing (NLP) to analyze the sentiment of a given word or phrase. The goal is to predict whether the input carries a positive, negative, or neutral sentiment.</p>
+    
+    <h2>How it Works</h2>
+    <p>Simply enter a word or phrase in the input field below and submit. The system will analyze the sentiment and provide the predicted result.</p>
+
+    <form action="#" method="post">
+        {% csrf_token %}
+        Word: <input type="text" name="word"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Result:</h2>
+    <input type="text" value="{{a}}">
+
+    <h2>Future Scope</h2>
+    <p>The project has potential for expansion and improvement:</p>
+    <ul>
+        <li>Incorporate machine learning models for more accurate sentiment analysis.</li>
+        <li>Enhance the user interface for a more interactive experience.</li>
+        <li>Integrate with social media APIs to analyze sentiments from real-time tweets or posts.</li>
+        <li>Implement data visualization to present sentiment trends over time.</li>
+    </ul>
+
+</body>
+
+</html>

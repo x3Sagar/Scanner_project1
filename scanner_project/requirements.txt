@@ -1,0 +1,11 @@
+apify-client==1.4.1
+apify-shared==1.0.2
+dj-database-url==2.1.0
+Django==4.2.7
+flake8
+Flask
+huggingface-hub
+pyflakes
+tokenizers
+torch==2.1.0
+transformers
